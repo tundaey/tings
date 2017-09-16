@@ -6,7 +6,7 @@ const server = supertest.agent("http://localhost:4000")
 //Begin unit test
 
 describe("SAMPLE uit test", function(){
-    it("should return home page", function(done){
+    it("should return home page jenkins", function(done){
         server.get("/")
         .expect("Content-type", /text/)
         .expect(200)
